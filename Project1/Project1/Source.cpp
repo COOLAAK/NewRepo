@@ -3,7 +3,7 @@
 using namespace std;
 void main()
 {
-	srand(time(0))
+	srand(time(0));
 	int a;
 	cout << "Enter number: ";
 	cin >> a;
@@ -24,5 +24,12 @@ void main()
 			g[i][j] = rand() % 20 + 1;
 		}
 	}
-
+	for (int i = 0; i < 5; i++)
+	{
+		for (int j = 0; j < 4; j++)
+		{
+			cout << g[i][j] << " ";
+		}
+		cout << endl;
+	}
 }
